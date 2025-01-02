@@ -23,7 +23,15 @@ let num1 = 100;
 num1++;
 console.log(num1);
 
+let x = 100;
+let y = x++;
 
+console.log(`x : ${x} , y : ${y}`); // x:101, y:100
+
+let p = 100;
+let q = ++p;
+
+console.log(`x : ${p} , y : ${q}`); // p:101, q:101
 
 
 
