@@ -1,5 +1,22 @@
 "use strict" 
 
+// --------------------* Data Type *---------------------- //
+/*  ==== Primitive ===== (Call By Value)
+
+    7 Type : String, Number, Boolean, Null, Undefined, Symbol, BigInt
+
+    ==== Non-Primitive ===== (Call By Reference)
+
+    Array, Objects, Functions
+    
+*/
+
+/*
+    JavaScript is a dynamically typed language, but TypeScript is a statically typed language. 
+    Longer answer: In dynamically typed languages all type checks are performed in a runtime, 
+    only when your program is executing.
+*/ 
+
 /* 
     1. Treat all js code as newer version. 
     2. The "use strict" directive in JavaScript enhances code quality by enforcing stricter parsing and error handling, 
@@ -27,5 +44,41 @@
                             email : "sanskar@gmail.com",
                             isPass : true,
                          }
+
+*/
+
+const id = Symbol("123");
+const otherId = Symbol("123");
+
+console.log(id, otherId);
+console.log(id === otherId); // false
+
+//========= Type of DataType ===========//
+
+let arr = [1,2,3,4,5,6,7,8]
+console.log(typeof(arr)); // object
+
+let user = {
+    firstName : "sanskar",
+    lastName : "atre"
+}
+console.log(typeof(user)); // object
+
+ function profile() {
+    console.log("This is my Function");
+    
+}
+console.log(profile); // function
+
+
+let myNull = null
+console.log(typeof(myNull)); // object
+
+
+/* M/M => 
+  Stack -> Used for primitive data-type
+           Here you get the copy
+  Heap ->  used for non-primitive data-type
+           Here you get the original value(reference)
 
 */

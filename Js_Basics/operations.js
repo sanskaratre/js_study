@@ -34,5 +34,25 @@ let q = ++p;
 console.log(`x : ${p} , y : ${q}`); // p:101, q:101
 
 
+// -------------------------------- * conversions *------------------------------- //
+
+console.log("2" > 1);  // true
+
+console.log(null > 0); // false
+console.log(null == 0); // false
+console.log(null >= 0); // true
+
+console.log("2" > true); // true
+
+
+console.log(undefined > 0); // false
+console.log(undefined == 0); // false
+console.log(undefined < 0); // false
+console.log(undefined >= 0); // false
+
+// When you use the compaire operatior then the string is converted in to number nad null is converted into 0.
+// also the == is working diffrently bcs there are saperate rules for == and ===.
+
+
 
 
